@@ -35,5 +35,6 @@ npm prune --production
 
 # Restart app
 echo "done!"
-pm2 stop ./index.js
+
+pm2 stop --silent ./index.js
 pm2 start ./index.js
