@@ -4,8 +4,7 @@ set -e
 ### Configuration ###
 
 # your remote server address
-# SERVER=root@255.255.2555.255 
-SERVER=schoolMain
+SERVER=root@255.255.2555.255 
 
 # the path to your local work.sh file. Can be found by opening the 
 # terminal to your project and running 'pwd'
