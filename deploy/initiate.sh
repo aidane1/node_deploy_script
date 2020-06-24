@@ -27,7 +27,7 @@ if npm test ; then
 	scp $LOCAL_FILE_PATH/deploy/work.sh $SERVER:$REMOTE_SCRIPT_PATH/work.sh
 
 	# This command will log in to your remote server & run the work.sh file
-	run ssh $SERVER bash $REMOTE_SCRIPT_PATH/work.sh
+	ssh $SERVER bash $REMOTE_SCRIPT_PATH/work.sh
 
 	# After work.sh is finished running, this command will log in and remove the file
 	run ssh $SERVER "rm -f $REMOTE_SCRIPT_PATH/work.sh"
