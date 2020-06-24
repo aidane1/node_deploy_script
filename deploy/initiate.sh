@@ -4,14 +4,15 @@ set -e
 ### Configuration ###
 
 # your remote server address
-SERVER=root@255.255.2555.255 
+# SERVER=root@255.255.2555.255 
+SERVER=schoolMain
 
 # the path to your local work.sh file. Can be found by opening the 
 # terminal to your project and running 'pwd'
 LOCAL_FILE_PATH=/Users/aidaneglin/stemulationTutorials/node_deploy_script
 
 # The path to your project on the remote server
-REMOTE_SCRIPT_PATH=/home/stemulationTutorials/node_deploy_script
+REMOTE_SCRIPT_PATH=/home/aidan/stemulationTutorials
 
 # Assures that all tests are passing before it tries to deploy
 if npm test ; then
