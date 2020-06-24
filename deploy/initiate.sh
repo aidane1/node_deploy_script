@@ -30,7 +30,7 @@ if npm test ; then
 	ssh $SERVER bash $REMOTE_SCRIPT_PATH/work.sh
 
 	# After work.sh is finished running, this command will log in and remove the file
-	run ssh $SERVER "rm -f $REMOTE_SCRIPT_PATH/work.sh"
+	ssh $SERVER "rm -f $REMOTE_SCRIPT_PATH/work.sh"
 
 else 
 	echo "An error occured during testing. Deployment failed"
